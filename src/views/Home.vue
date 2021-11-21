@@ -1,18 +1,51 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+<section id="sect1">
+  <h1>Lorem Ipsum</h1>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum rem vitae nostrum quis aperiam aut porro, asperiores similique tempore sit et beatae distinctio quae impedit facere corporis sequi facilis dolor!</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum rem vitae nostrum quis aperiam aut porro, asperiores similique tempore sit et beatae distinctio quae impedit facere corporis sequi facilis dolor!</p>
+</section>
+<section id="sect2">
+  <h1>Lorem Ipsum</h1>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum rem vitae nostrum quis aperiam aut porro, asperiores similique tempore sit et beatae distinctio quae impedit facere corporis sequi facilis dolor!</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum rem vitae nostrum quis aperiam aut porro, asperiores similique tempore sit et beatae distinctio quae impedit facere corporis sequi facilis dolor!</p>
+</section>
+<section id="sect3">
+  <h1>Lorem Ipsum</h1>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum rem vitae nostrum quis aperiam aut porro, asperiores similique tempore sit et beatae distinctio quae impedit facere corporis sequi facilis dolor!</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum rem vitae nostrum quis aperiam aut porro, asperiores similique tempore sit et beatae distinctio quae impedit facere corporis sequi facilis dolor!</p>
+</section>
+
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+
 
 export default {
   name: 'Home',
-  components: {
-    HelloWorld
-  }
+  components: {  }
 }
 </script>
+
+<style scoped>
+section{
+  padding: 200px;
+}
+
+#sect1{
+  background: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  color: rgb(0, 0, 0);
+  background-image: url('../assets/circle-scatter-haikei.svg');
+}
+
+#sect2{
+  background: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  color: white;
+  background-image: url('../assets/wave.svg');
+}
+</style>

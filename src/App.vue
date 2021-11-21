@@ -1,12 +1,20 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </div>
-  <router-view/>
+  <NavBar />
 </template>
 
+
+<script>
+import NavBar from './components/NavBar.vue'
+
+export default {
+  components:{ NavBar }  
+}
+</script>
+
 <style>
+body{
+   background: rgb(243, 243, 243);
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -28,3 +36,11 @@
   color: #42b983;
 }
 </style>
+
+<!-- 
+    Color Palettes:
+        #000000 - super black
+        #6D6E71 - super gray
+        #D1D3D4 - super light gray
+        #FFFFFF - super white
+        #A5E5D9 - super light cyan -->
