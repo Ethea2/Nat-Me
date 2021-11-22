@@ -21,7 +21,8 @@ export default {
 
 <style scoped>
 h1{
-    position:inherit;
+    position:relative;
+    left: 20px;
     float: left;
     font-family: 'Open Sans Condensed', sans-serif;
     color: rgb(0, 0, 0);
