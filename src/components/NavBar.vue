@@ -1,6 +1,6 @@
 <template>
  <div class="topnav">
-    <h1>Nat Me!</h1>
+    <h1 class="webTitle" @click="redirect">Nat Me!</h1>
     <router-link to="/">Home</router-link>
     <router-link to="/about">About Me</router-link>
 </div> 
@@ -15,7 +15,11 @@
 
 <script>
 export default {
-
+  methods:{
+    redirect(){
+      this.$router.push({name: 'Home'})
+    }
+  }
 }
 </script>
 
@@ -55,6 +59,9 @@ h1{
   border-radius: 10px;
 }
 
+.webTitle{
+  cursor:pointer;
+}
 
 </style>
 <!-- 
