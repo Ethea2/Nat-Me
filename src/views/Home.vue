@@ -16,8 +16,11 @@
         </p>
       </div>
     </transition>
+    <transition
+    enter-active-class="animate__animated animate__fadeInRight">
     <img src="https://scontent.fmct5-1.fna.fbcdn.net/v/t1.6435-9/141425065_10157395168806503_8495656523964962047_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=AIbiuzodO00AX-La6-U&tn=f9d_IIJwo19Wy6SA&_nc_ht=scontent.fmct5-1.fna&oh=23a97593fae1a6992631b0c47ffc5b00&oe=61C2FBE0" 
-    width="400" @click="showDiv1 = !showDiv1">
+    width="400" v-if="showDiv1">
+    </transition>
   </section>
   <section id="sect2">
     <div class="div2">
@@ -33,8 +36,11 @@
         I suddenly get the urge to learn more and do better than when I did before!  
       </p>
     </div>
-    <img id="img2" src="https://scontent.fmct5-1.fna.fbcdn.net/v/t1.6435-9/67401749_10156483165733549_7207754489116229632_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=jlHW7VX9IcEAX_IOggE&_nc_ht=scontent.fmct5-1.fna&oh=78712cc0125657447c176a54514d639c&oe=61C48D60"
-    width="500">
+    <transition
+    enter-active-class="animate__animated animate__fadeInLeft">
+      <img id="img2" src="https://scontent.fmct5-1.fna.fbcdn.net/v/t1.6435-9/67401749_10156483165733549_7207754489116229632_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=jlHW7VX9IcEAX_IOggE&_nc_ht=scontent.fmct5-1.fna&oh=78712cc0125657447c176a54514d639c&oe=61C48D60"
+      width="500" v-if="showDiv1">
+    </transition>  
   </section>
   <section id="sect3">
     <div class="div3">
@@ -57,6 +63,7 @@
 
 <script>
 
+
 export default {
   name: "Home", 
   components: {},
@@ -67,6 +74,9 @@ export default {
   },
   methods:{
 
+  },
+  mounted(){
+    this.showDiv1 = true;
   }
 };
 
