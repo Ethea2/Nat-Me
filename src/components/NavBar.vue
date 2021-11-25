@@ -1,6 +1,7 @@
 <template>
  <div class="topnav">
-    <h1 class="webTitle" @click="redirect" data-aos="zoom-in-right">Nat Me!</h1>
+    <h1 class="webTitle animate__animated" @click="redirect" :class="{animate__tada:hoverOver}"
+    @mouseenter="enterMouse" @mouseleave="leaveMouse">Nat Me!</h1>
     <router-link to="/">Home</router-link>
     <router-link to="/about">About Me</router-link>
 </div> 
@@ -15,9 +16,20 @@
 
 <script>
 export default {
+  data(){
+    return{
+      hoverOver: false,
+    }
+  },
   methods:{
     redirect(){
       this.$router.push({name: 'Home'})
+    },
+    enterMouse(){
+      this.hoverOver = true;
+    },
+    leaveMouse(){
+      this.hoverOver = false;
     }
   },
   mounted(){
@@ -65,6 +77,8 @@ h1{
 .webTitle{
   cursor:pointer;
 }
+
+
 
 </style>
 <!-- 

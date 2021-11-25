@@ -1,20 +1,20 @@
 <template>
   <section id="sect1">
-    <div class="div1">
-      <h1 class="head1" data-aos="fade-right">Nathan Andres</h1>
-      <p data-aos="fade-right" data-aos-delay="500">
-        An aspiring web developer ☁️ who is eager to learn best practices and interesting technologies.
-        He is also interested in learning how to contribute to open source projects and would like
-        to start some of his own in the future 🗞️.
-      </p>
-      <p data-aos="fade-right" data-aos-delay="800">
-        He has a multitude of interests, varying from gaming all the way to music. He has been playing
-        in a band as a guitar player for years now 🎸. He is also an avid competitive gamer 🎮, who is a 
-        strong advocate about E-sports 🖥️.
-      </p>
-    </div>
-    <img src="https://scontent.fmct5-1.fna.fbcdn.net/v/t1.6435-9/141425065_10157395168806503_8495656523964962047_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=AIbiuzodO00AX-La6-U&tn=f9d_IIJwo19Wy6SA&_nc_ht=scontent.fmct5-1.fna&oh=23a97593fae1a6992631b0c47ffc5b00&oe=61C2FBE0" 
-    width="400" data-aos="fade-left">
+      <div class="div1">
+        <h1 class="head1" data-aos="fade-right">Nathan Andres</h1>
+        <p data-aos="fade-right" data-aos-delay="500">
+          An aspiring web developer ☁️ who is eager to learn best practices and interesting technologies.
+          He is also interested in learning how to contribute to open source projects and would like
+          to start some of his own in the future 🗞️.
+        </p>
+        <p data-aos="fade-right" data-aos-delay="800">
+          He has a multitude of interests, varying from gaming all the way to music. He has been playing
+          in a band as a guitar player for years now 🎸. He is also an avid competitive gamer 🎮, who is a 
+          strong advocate about E-sports 🖥️.
+        </p>
+      </div>
+      <img src="https://scontent.fmct5-1.fna.fbcdn.net/v/t1.6435-9/141425065_10157395168806503_8495656523964962047_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=AIbiuzodO00AX-La6-U&tn=f9d_IIJwo19Wy6SA&_nc_ht=scontent.fmct5-1.fna&oh=23a97593fae1a6992631b0c47ffc5b00&oe=61C2FBE0" 
+      width="400" data-aos="fade-left">
   </section>
   <section id="sect2">
     <div class="div2">
@@ -90,6 +90,7 @@ img{
   position: relative;
   left: 200px;
   bottom:400px;
+  border-radius: 10px;
 }
 
 h1{
@@ -167,6 +168,7 @@ div{
   color: black;
   background-image: url("../assets/peaks.svg");
 }
+
 
 
 
