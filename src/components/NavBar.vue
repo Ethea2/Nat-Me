@@ -1,8 +1,9 @@
 <template>
  <div class="topnav">
-    <h1 class="webTitle animate__animated" @click="redirect" :class="{animate__tada:hoverOver}"
-    @mouseenter="enterMouse" @mouseleave="leaveMouse">Nat Me!</h1>
-    <router-link to="/">Home</router-link>
+    <h1 class="webTitle animate__animated" @click="redirect" :class="{animate__heartBeat:hoverOverTitle}"
+    @mouseenter="enterMouseTitle" @mouseleave="leaveMouseTitle">Nat Me!</h1>
+    <router-link to="/" class="animate__animated" :class="{animate__pulse:hoverOverHome}"
+    @mouseenter="enterMouseHome" @mouseleave="leaveMouseHome">Home</router-link>
     <router-link to="/about">About Me</router-link>
 </div> 
 <!--<div class="container">
@@ -18,18 +19,26 @@
 export default {
   data(){
     return{
-      hoverOver: false,
+      hoverOverTitle: false,
+      hoverOverHome: false,
+      hoverOverAbout: false
     }
   },
   methods:{
     redirect(){
       this.$router.push({name: 'Home'})
     },
-    enterMouse(){
-      this.hoverOver = true;
+    enterMouseTitle(){
+      this.hoverOverTitle = true;
     },
-    leaveMouse(){
-      this.hoverOver = false;
+    leaveMouseTitle(){
+      this.hoverOverTitle = false;
+    },
+    enterMouseHome(){
+      this.hoverOverHome = true;
+    },
+    leaveMouseHome(){
+      this.hoverOverHome = false;
     }
   },
   mounted(){
