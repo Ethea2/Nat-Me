@@ -1,6 +1,6 @@
 <template>
  <div class="topnav">
-    <h1 class="webTitle" @click="redirect">Nat Me!</h1>
+    <h1 class="webTitle" @click="redirect" data-aos="zoom-in-right">Nat Me!</h1>
     <router-link to="/">Home</router-link>
     <router-link to="/about">About Me</router-link>
 </div> 
@@ -19,6 +19,9 @@ export default {
     redirect(){
       this.$router.push({name: 'Home'})
     }
+  },
+  mounted(){
+    AOS.init();
   }
 }
 </script>
