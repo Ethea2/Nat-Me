@@ -1,18 +1,18 @@
 <template>
  <div class="topnav">
     <h1 class="webTitle animate__animated" @click="redirect" :class="{animate__heartBeat:hoverOverTitle}"
-    @mouseenter="enterMouseTitle" @mouseleave="leaveMouseTitle">Nat Me!</h1>
+    @mouseenter="enterTitle" @mouseleave="leaveTitle">Nat Me!</h1>
     <router-link to="/" class="animate__animated" :class="{animate__pulse:hoverOverHome}"
-    @mouseenter="enterMouseHome" @mouseleave="leaveMouseHome">Home</router-link>
-    <router-link to="/about">About Me</router-link>
-</div> 
-<!--<div class="container">
-    <div id="nav">
+    @mouseenter="enterHome" @mouseleave="leaveHome">Home</router-link>
+    <router-link to="/about" class="animate__animated" :class="{animate__pulse:hoverOverAbout}"
+    @mouseenter="enterAbout" @mouseleave="leaveAbout">About Me</router-link>
+</div>
 
-    </div>
-</div> -->
-
-<router-view/>
+    <router-view v-slot="{ Component }">
+      <transition name="route" mode="in-out">
+        <component :is="Component"></component>
+      </transition>
+    </router-view>
 </template>
 
 <script>
@@ -28,17 +28,23 @@ export default {
     redirect(){
       this.$router.push({name: 'Home'})
     },
-    enterMouseTitle(){
+    enterTitle(){
       this.hoverOverTitle = true;
     },
-    leaveMouseTitle(){
+    leaveTitle(){
       this.hoverOverTitle = false;
     },
-    enterMouseHome(){
+    enterHome(){
       this.hoverOverHome = true;
     },
-    leaveMouseHome(){
+    leaveHome(){
       this.hoverOverHome = false;
+    },
+    enterAbout(){
+      this.hoverOverAbout = true;
+    },
+    leaveAbout(){
+      this.hoverOverAbout = false;
     }
   },
   mounted(){
@@ -85,6 +91,25 @@ h1{
 
 .webTitle{
   cursor:pointer;
+}
+
+/* route transitions */
+.route-enter-from{
+  opacity: 0;
+  transform: translateX(100px);
+}
+
+.route-enter-active{
+  transition: all 0.3s ease-out;
+}
+
+.route-leave-to{
+  opacity: 0;
+  transform: translateX(-100px)
+}
+
+.route-leave-active{
+  transition: all 0.3s ease-in;
 }
 
 
