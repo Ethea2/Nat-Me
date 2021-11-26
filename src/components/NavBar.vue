@@ -6,13 +6,14 @@
     @mouseenter="enterHome" @mouseleave="leaveHome">Home</router-link>
     <router-link to="/about" class="animate__animated" :class="{animate__pulse:hoverOverAbout}"
     @mouseenter="enterAbout" @mouseleave="leaveAbout">About Me</router-link>
-</div>
-
-    <router-view v-slot="{ Component }">
-      <transition name="route" mode="in-out">
-        <component :is="Component"></component>
-      </transition>
-    </router-view>
+  </div>
+  <router-view v-slot="{ Component }">
+    <transition name="custom-classes-transition"
+    enter-active-class="animate__fadeInLeftBig"
+    leave-active-class="animate__fadeInLeftBig">
+      <component :is="Component"></component>
+    </transition>
+  </router-view>
 </template>
 
 <script>
@@ -91,25 +92,6 @@ h1{
 
 .webTitle{
   cursor:pointer;
-}
-
-/* route transitions */
-.route-enter-from{
-  opacity: 0;
-  transform: translateX(100px);
-}
-
-.route-enter-active{
-  transition: all 0.3s ease-out;
-}
-
-.route-leave-to{
-  opacity: 0;
-  transform: translateX(-100px)
-}
-
-.route-leave-active{
-  transition: all 0.3s ease-in;
 }
 
 
