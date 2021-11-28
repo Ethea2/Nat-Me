@@ -1,19 +1,19 @@
 <template>
  <div class="topnav">
-    <h1 class="webTitle animate__animated" @click="redirect" :class="{animate__heartBeat:hoverOverTitle}"
-    @mouseenter="enterTitle" @mouseleave="leaveTitle">Nat Me!</h1>
-    <router-link to="/" class="animate__animated" :class="{animate__pulse:hoverOverHome}"
-    @mouseenter="enterHome" @mouseleave="leaveHome">Home</router-link>
-    <router-link to="/about" class="animate__animated" :class="{animate__pulse:hoverOverAbout}"
-    @mouseenter="enterAbout" @mouseleave="leaveAbout">About Me</router-link>
-  </div>
-  <router-view v-slot="{ Component }">
-    <transition name="custom-classes-transition"
-    enter-active-class="animate__fadeInLeftBig"
-    leave-active-class="animate__fadeInLeftBig">
+      <h1 class="webTitle animate__animated" @click="redirect" :class="{animate__heartBeat:hoverOverTitle}"
+      @mouseenter="enterTitle" @mouseleave="leaveTitle">Nat Me!</h1>
+      <router-link to="/" class="animate__animated" :class="{animate__pulse:hoverOverHome}"
+      @mouseenter="enterHome" @mouseleave="leaveHome">Home</router-link>
+      <router-link to="/about" class="animate__animated" :class="{animate__pulse:hoverOverAbout}"
+      @mouseenter="enterAbout" @mouseleave="leaveAbout">About Me</router-link>
+   <!--
+   <router-view v-slot="{ Component }">
+    <transition name="fade" mode="in-out">
       <component :is="Component"></component>
     </transition>
-  </router-view>
+    </router-view> -->
+</div>
+   <router-view />
 </template>
 
 <script>
@@ -94,6 +94,16 @@ h1{
   cursor:pointer;
 }
 
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
 
 
 </style>
