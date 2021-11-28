@@ -1,6 +1,6 @@
 <template>
  <div class="topnav">
-      <h1 class="webTitle animate__animated" @click="redirect" :class="{animate__heartBeat:hoverOverTitle}"
+      <h1 class="webTitle animate__animated" @click="redirect" :class="{animate__pulse:hoverOverTitle}"
       @mouseenter="enterTitle" @mouseleave="leaveTitle">Nat Me!</h1>
       <router-link to="/" class="animate__animated" :class="{animate__pulse:hoverOverHome}"
       @mouseenter="enterHome" @mouseleave="leaveHome">Home</router-link>
