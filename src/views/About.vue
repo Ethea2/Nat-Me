@@ -6,39 +6,39 @@
   <section class="project-section">
     <div class="container-1">
       <div class="box-1">
-        <div class="title-container">
+        <div class="title-container" data-aos="fade-right">
           <h1>Aryan Bot</h1>
         </div>
         <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea corrupti dolores porro corporis laboriosam, rerum amet ratione, quod dolorum officiis doloribus, eius cupiditate modi repellat? Maxime officiis provident minima quis!</p>
       </div>
       <div class="box-2">
-        <h1>GIF</h1>
+        <h1 data-aos="fade-up-left">GIF</h1>
       </div>
     </div>
   </section>
   <section class="project-section">
     <div class="container-2">
       <div class="box-1">
-        <div class="title-container">
+        <div class="title-container" data-aos="fade-right">
           <h1>Shape Shifter</h1>
         </div>
         <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea corrupti dolores porro corporis laboriosam, rerum amet ratione, quod dolorum officiis doloribus, eius cupiditate modi repellat? Maxime officiis provident minima quis!</p>
       </div>
       <div class="box-2">
-        <h1>GIF</h1>
+        <h1 data-aos="fade-up-left">GIF</h1>
       </div>
     </div>
   </section>
   <section class="project-section">
     <div class="container-3">
       <div class="box-1">
-        <div class="title-container">
+        <div class="title-container" data-aos="fade-right">
           <h1>Lola Helper</h1>
         </div>
         <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea corrupti dolores porro corporis laboriosam, rerum amet ratione, quod dolorum officiis doloribus, eius cupiditate modi repellat? Maxime officiis provident minima quis!</p>
       </div>
       <div class="box-2">
-        <h1>GIF</h1>
+        <h1 data-aos="fade-up-left">GIF</h1>
       </div>
     </div>
   </section>
@@ -47,6 +47,12 @@
 
 <script>
 export default {
+  mounted(){
+    AOS.init({
+      duration: 1000,
+      offset: 300
+    });
+  }
 
 }
 </script>
