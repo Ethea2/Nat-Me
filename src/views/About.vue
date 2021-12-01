@@ -1,47 +1,48 @@
 <template>
-<section class="title">
-  <h1 class="section-title">Coding Projects!</h1>
-</section>
-<section class="project-section">
-  <div class="container-1">
-    <div class="box-1">
-      <div class="title-container">
-        <h1>Aryan Bot</h1>
+<section class="main-page">
+  <section class="title">
+    <h1 class="section-title">Coding Projects!</h1>
+  </section>
+  <section class="project-section">
+    <div class="container-1">
+      <div class="box-1">
+        <div class="title-container">
+          <h1>Aryan Bot</h1>
+        </div>
+        <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea corrupti dolores porro corporis laboriosam, rerum amet ratione, quod dolorum officiis doloribus, eius cupiditate modi repellat? Maxime officiis provident minima quis!</p>
       </div>
-      <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea corrupti dolores porro corporis laboriosam, rerum amet ratione, quod dolorum officiis doloribus, eius cupiditate modi repellat? Maxime officiis provident minima quis!</p>
-    </div>
-    <div class="box-2">
-      <h1>GIF</h1>
-    </div>
-  </div>
-</section>
-<section class="project-section">
-  <div class="container-2">
-    <div class="box-1">
-      <div class="title-container">
-        <h1>Shape Shifter</h1>
+      <div class="box-2">
+        <h1>GIF</h1>
       </div>
-      <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea corrupti dolores porro corporis laboriosam, rerum amet ratione, quod dolorum officiis doloribus, eius cupiditate modi repellat? Maxime officiis provident minima quis!</p>
     </div>
-    <div class="box-2">
-      <h1>GIF</h1>
-    </div>
-  </div>
-</section>
-<section class="project-section">
-  <div class="container-3">
-    <div class="box-1">
-      <div class="title-container">
-        <h1>Lola Helper</h1>
+  </section>
+  <section class="project-section">
+    <div class="container-2">
+      <div class="box-1">
+        <div class="title-container">
+          <h1>Shape Shifter</h1>
+        </div>
+        <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea corrupti dolores porro corporis laboriosam, rerum amet ratione, quod dolorum officiis doloribus, eius cupiditate modi repellat? Maxime officiis provident minima quis!</p>
       </div>
-      <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea corrupti dolores porro corporis laboriosam, rerum amet ratione, quod dolorum officiis doloribus, eius cupiditate modi repellat? Maxime officiis provident minima quis!</p>
+      <div class="box-2">
+        <h1>GIF</h1>
+      </div>
     </div>
-    <div class="box-2">
-      <h1>GIF</h1>
+  </section>
+  <section class="project-section">
+    <div class="container-3">
+      <div class="box-1">
+        <div class="title-container">
+          <h1>Lola Helper</h1>
+        </div>
+        <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea corrupti dolores porro corporis laboriosam, rerum amet ratione, quod dolorum officiis doloribus, eius cupiditate modi repellat? Maxime officiis provident minima quis!</p>
+      </div>
+      <div class="box-2">
+        <h1>GIF</h1>
+      </div>
     </div>
-  </div>
+  </section>
 </section>
-  
 </template>
 
 <script>
@@ -50,10 +51,16 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+.main-page {
+  background: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../assets/circle-bg.svg");
+  color:white;
+}
 .title{
   padding:50px 0px 0px 0px;
-  color:black;
 }
 .section-title{
   font-size: 60px;
@@ -61,7 +68,6 @@ export default {
 }
 .project-section{
   padding:200px 0 200px 0;
-  color:black;
 }
 .project-section div{
   border: 1px solid black;
@@ -84,5 +90,6 @@ export default {
   font-size: 40px;
   font-weight: bold;
 }
+
 
 </style>
