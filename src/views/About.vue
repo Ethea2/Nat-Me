@@ -9,7 +9,7 @@
         <div class="title-container" data-aos="fade-right">
           <h1>Aryan Bot</h1>
         </div>
-        <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea corrupti dolores porro corporis laboriosam, rerum amet ratione, quod dolorum officiis doloribus, eius cupiditate modi repellat? Maxime officiis provident minima quis!</p>
+        <p class="project-description">Lore ipsum dolor sit amet, consectetur adipisicing elit. Ea corrupti dolores porro corporis laboriosam, rerum amet ratione, quod dolorum officiis doloribus, eius cupiditate modi repellat? Maxime officiis provident minima quis!</p>
       </div>
       <div class="box-2">
         <h1 data-aos="fade-up-left">GIF</h1>
